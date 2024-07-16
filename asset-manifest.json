@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/RangzMatch%20/static/css/main.6e7ac0d0.css",
+    "main.js": "/RangzMatch%20/static/js/main.1acdbb70.js",
+    "static/js/453.80a628e8.chunk.js": "/RangzMatch%20/static/js/453.80a628e8.chunk.js",
+    "index.html": "/RangzMatch%20/index.html",
+    "main.6e7ac0d0.css.map": "/RangzMatch%20/static/css/main.6e7ac0d0.css.map",
+    "main.1acdbb70.js.map": "/RangzMatch%20/static/js/main.1acdbb70.js.map",
+    "453.80a628e8.chunk.js.map": "/RangzMatch%20/static/js/453.80a628e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e7ac0d0.css",
+    "static/js/main.1acdbb70.js"
+  ]
+}
