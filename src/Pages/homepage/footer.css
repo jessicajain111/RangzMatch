@@ -1,0 +1,36 @@
+.footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+h3{
+    font-family: monospace;
+    font-size: 24px;
+    margin-right: 20px;
+    text-shadow: 1px 1px 2px pink, -1px -1px 2px cyan;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a{
+    margin-left: 15px;
+}
+
+.social-icons img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
