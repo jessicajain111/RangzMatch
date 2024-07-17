@@ -1,16 +1,19 @@
 // import rangzphotoshoot
 import React from 'react';
-import './body.css';
+import './Home.css';
 import Header from '../../Components/Header';
 import Footer from './Footer';
+import rangilalogo from '../../img/rangilalogo.png'
+import rangzphoto from '../../img/rangzphotoshoot.jpg'
 
-function Body(){
+
+function Home(){
     return(
     <>
     <Header/>
     <div className="body">
         <div className ="upper">
-            <img src="./img/rangilalogo.png" alt="rangila logo" className="rangz-logo"/>
+            <img src={rangilalogo} alt="rangila logo" className="rangz-logo"/>
             <h1>Welcome to RangzMatch</h1>
             <div className="buttons">
                 <button>Create an Acount</button>
@@ -28,7 +31,7 @@ function Body(){
                 by our love for dance. We strive to build an appreciation for dance and culture.</p>
             </div>
             <div className="rangz-photo">
-            <img src="/img/rangzphotoshoot.jpg" alt="rangila group"/>
+            <img src={rangzphoto} alt="rangila group"/>
             </div>
         </div>
     </div>
@@ -40,5 +43,5 @@ function Body(){
     )
 }
 
-export default Body;
+export default Home;
 
