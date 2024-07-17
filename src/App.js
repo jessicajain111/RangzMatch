@@ -1,22 +1,21 @@
 import './App.css';
-import Header from "./Components/Header.js";
 import Body from "./Pages/homepage/Body.js";
-import Footer from "./Pages/homepage/Footer.js";
 import CreateAccount from './Pages/Create Account/CreateAccount';
 import MentorMentee from './Pages/Mentor Mentee/MentorMentee';
-import {BrowserRouter, Routes, useRoutes} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom';
 
 
 function App() {
-  let routes = useRoutes([{
-    path: "/", 
-    element: <Body/>,
-  }])
+  
   return (
-
-    <BrowserRouter>
-      {routes}
-    </BrowserRouter>
+    <Routes>
+     <Route exact path= "/" element= {<Body/>}></Route>
+     <Route path='/createAccount' element= {<CreateAccount />}></Route>
+     <Route path='/MentorMentee' element= {<MentorMentee />}></Route>
+     <Route path='*' element= {<Body />}></Route>
+     
+     </Routes>
+    
       
    
   );

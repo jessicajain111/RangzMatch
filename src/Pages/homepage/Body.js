@@ -1,13 +1,16 @@
 // import rangzphotoshoot
 import React from 'react';
 import './body.css';
+import Header from '../../Components/Header';
+import Footer from './Footer';
 
 function Body(){
     return(
     <>
+    <Header/>
     <div className="body">
         <div className ="upper">
-            <img src="/img/rangilalogo.png" alt="rangila logo" className="rangz-logo"/>
+            <img src="./img/rangilalogo.png" alt="rangila logo" className="rangz-logo"/>
             <h1>Welcome to RangzMatch</h1>
             <div className="buttons">
                 <button>Create an Acount</button>
@@ -29,6 +32,7 @@ function Body(){
             </div>
         </div>
     </div>
+    <Footer/>
         
         
     </>
