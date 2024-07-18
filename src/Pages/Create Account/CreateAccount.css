@@ -1,17 +1,19 @@
 body{
     background-color: white;
     color: black;
+    font-family: monospace;
    
   }
   h1{
     display: block;
     font-size: 4rem;
-    font-family: "Inter";
+    font-family: monospace;
     text-align: center;
     margin-top: 90px;
     text-shadow: 1 2px 4px rgba(0.0,0,0.1) ;
     font-weight: 400;
     font-style: italic;
+    color: black;
    
   }
  
@@ -21,7 +23,7 @@ body{
    .text{
     display: flex;
     padding: 15px ;
-    width: 50% ;
+    width: 70% ;
     margin: auto;
     border-radius: 100px;
     margin-top: 53px;
@@ -35,10 +37,12 @@ body{
   
   }
    .continue-button{
+    background-color: rgb(158, 157, 158);
+    color: black;
     cursor: pointer;
-    margin-left: 77em;
+    margin-left: 28.75em;
     margin-top: 20px;
-    width: 50px ;
+    width: 80px ;
    
    
   }

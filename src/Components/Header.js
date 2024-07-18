@@ -1,5 +1,6 @@
 import React from 'react';
 import './header.css'
+import {Link} from 'react-router-dom'
 
 function Header() {
     return (
@@ -8,10 +9,10 @@ function Header() {
                 RangzMatch
             </div>
             <nav className='menu'>
-                <a href="/">Home</a>
-                <a href="/profile">Profile</a>
-                <a href="/create-account">Create Account</a>
-                <a href="/login">Login</a>
+                <Link to ="/">Home</Link>
+                <Link to ="/createaccount">Create Account</Link>
+                <Link to ="/login">Login</Link>
+                <Link to ="/">Profile</Link>  
             </nav>
         </header>
     )

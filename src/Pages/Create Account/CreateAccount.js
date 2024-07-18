@@ -1,6 +1,7 @@
 import React from "react";
 import './CreateAccount.css'
 import Header from "../../Components/Header";
+import {Link} from 'react-router-dom';
 
 
 function CreateAccount(){
@@ -10,14 +11,12 @@ function CreateAccount(){
         <Header/>
         <div className="page">
             <h1>Create Account</h1>
-            {/* <label htmlFor="FullName" name="FullName">Full Name</label> */}
-            <input id="FullName"type="text" className="text" name= "FullName" value="" />
-            {/* <label htmlFor="password" name="password">password</label> */}
-            <input id="password"type="password" className="text" name= "password" value="" />
-            {/* <label htmlFor="confirmpassword" name="confirmpassword">Confirm Password</label> */}
-            <input id="confirmpassword"type="password" className="text" name= "FullName" value="" />
+            <input id="FullName"type="text" className="text" name= "FullName" placeholder="Full Name" />
+            <input id="email" type="text" className="text" name= "email" placeholder="Email" />
+            <input id="password"type="password" className="text" name= "password" placeholder="Password" />
+            <input id="confirmpassword"type="password" className="text" name= "FullName" placeholder="Confirm Password" />
             
-            <button className="continue-button">Next</button>
+            <button className="continue-button" ><Link to ="/mentormentee">Next</Link></button>
         </div>
         </>
        
