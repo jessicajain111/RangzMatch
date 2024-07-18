@@ -6,10 +6,10 @@ body{
   }
   h1{
     display: block;
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: monospace;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 200px;
     text-shadow: 1 2px 4px rgba(0.0,0,0.1) ;
     font-weight: 400;
     font-style: italic;
@@ -38,9 +38,9 @@ body{
   }
    .continue-button{
     background-color: rgb(158, 157, 158);
-    color: black;
+    color: rgb(230, 230, 230);
     cursor: pointer;
-    margin-left: 28.75em;
+    margin-left: 29.5em;
     margin-top: 20px;
     width: 80px ;
    
