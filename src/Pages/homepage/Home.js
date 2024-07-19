@@ -5,6 +5,7 @@ import Header from '../../Components/Header';
 import Footer from './Footer';
 import rangilalogo from '../../img/rangilalogo.png'
 import rangzphoto from '../../img/rangzphotoshoot.jpg'
+import { Link } from 'react-router-dom';
 
 
 function Home(){
@@ -16,7 +17,7 @@ function Home(){
             <img src={rangilalogo} alt="rangila logo" className="rangz-logo"/>
             <h1>Welcome to RangzMatch</h1>
             <div className="buttons">
-                <button>Create an Acount</button>
+                <button><Link to ="/createaccount">Create Account</Link></button>
                 <button>Login</button>
 
             </div>

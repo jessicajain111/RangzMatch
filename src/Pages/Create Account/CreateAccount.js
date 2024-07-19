@@ -70,8 +70,8 @@ function CreateAccount(){
     <>
         <Header />
         <div className="page">
-            <h1>Create Account</h1>
             <form onSubmit={handleSubmit}>
+                <h1>Create Account</h1>
                 <input
                     id="name"
                     type="text"
@@ -112,7 +112,9 @@ function CreateAccount(){
                     onChange={handleChange}
                 />
                 <p>{errors.confirmpassword}</p>
-                <button className="continue-button" type="submit">Next</button>
+                <div className="button-wrapper">
+                    <button className="continue-button" type="submit">Next</button>
+                </div>
             </form>
         </div>
     </>

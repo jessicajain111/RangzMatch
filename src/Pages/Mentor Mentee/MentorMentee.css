@@ -1,6 +1,5 @@
 body{
     font-family: 'Inter';
-    background-color: white;
     text-align: center;
     margin: 0;
  }
@@ -18,27 +17,27 @@ body{
  
  
  .description{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /*align items at the top*/
-    gap: 20px; /* space between mentor and mentee boxes */
-    padding: 20px;
- }
+   display: flex;
+   justify-content: center;
+   align-items: flex-start; /*align items at the top*/
+   gap: 20px; /* space between mentor and mentee boxes */
+   padding: 20px;
+}
  
  
- .mentor, .mentee{
-    width: 300px;
-    height: 400px;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 30px;
-    background-color: #ddd;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 200;
- }
+.mentor, .mentee{
+   width: 300px;
+   height: 400px;
+   border: 1px solid black;
+   padding: 20px;
+   border-radius: 30px;
+   background-color: #ddd;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 200;
+}
  
  
  

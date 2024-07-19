@@ -1,50 +1,50 @@
 body{
-    background-color: white;
-    color: black;
-    font-family: monospace;
-   
-  }
-  h1{
-    display: block;
-    font-size: 6rem;
-    font-family: monospace;
-    text-align: center;
-    margin-top: 200px;
-    text-shadow: 1 2px 4px rgba(0.0,0,0.1) ;
-    font-weight: 400;
-    font-style: italic;
-    color: black;
-   
-  }
+  background-color: white;
+  color: black;
+  font-family: monospace;
+ 
+}
+h1{
+  display: block;
+  font-size: 6rem;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 200px;
+  text-shadow: 1 2px 4px rgba(0.0,0,0.1) ;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+ 
+}
+
+
+
+
+ .text{
+  display: flex;
+  padding: 15px ;
+  width: 70% ;
+  margin: auto;
+  border-radius: 100px;
+  margin-top: 53px;
+  background-color: rgb(217, 217, 217);
+  color:black;
+  font-family: "Inter";
+  font-size: 1rem;
+
+
+
+
+}
+ .continue-button{
+  background-color: rgb(158, 157, 158);
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+  margin-left: 29.5em;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 80px ;
  
  
- 
- 
-   .text{
-    display: flex;
-    padding: 15px ;
-    width: 70% ;
-    margin: auto;
-    border-radius: 100px;
-    margin-top: 53px;
-    background-color: rgb(217, 217, 217);
-    color:black;
-    font-family: "Inter";
-    font-size: 1rem;
-  
- 
- 
-  
-  }
-   .continue-button{
-    background-color: rgb(158, 157, 158);
-    color: rgb(230, 230, 230);
-    cursor: pointer;
-    margin-left: 29.5em;
-    margin-top: 20px;
-    width: 80px ;
-   
-   
-  }
-  
- 
+}
+

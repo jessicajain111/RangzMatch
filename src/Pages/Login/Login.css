@@ -28,9 +28,13 @@ body{
  }
  
  
- .check{
-    margin-left: 33.5em;
-    margin-top: 4em;
- }
  
- 
+ .checkbox-container {
+  margin-left: 3px;
+  margin-top: 30px;
+  margin-right: 400px;
+  
+   
+   
+}
+
