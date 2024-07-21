@@ -1,6 +1,6 @@
 // import rangzphotoshoot
 import React from 'react';
-import './Home.css';
+import './Home.module.css';
 import Header from '../../Components/Header';
 import Footer from './Footer';
 import rangilalogo from '../../img/rangilalogo.png'
@@ -18,7 +18,7 @@ function Home(){
             <h1>Welcome to RangzMatch</h1>
             <div className="buttons">
                 <button><Link to ="/createaccount">Create Account</Link></button>
-                <button>Login</button>
+                <button><Link to ="/login"> Login </Link></button>
 
             </div>
         </div>

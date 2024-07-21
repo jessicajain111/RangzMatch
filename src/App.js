@@ -4,6 +4,7 @@ import CreateAccount from './Pages/Create Account/CreateAccount';
 import MentorMentee from './Pages/Mentor Mentee/MentorMentee';
 import Login from './Pages/Login/Login';
 import { Routes, Route} from 'react-router-dom';
+import Profile from './Pages/Profile/Profile';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
      <Route path='/createAccount' element= {<CreateAccount />}></Route>
      <Route path='/mentormentee' element= {<MentorMentee />}></Route>
      <Route path='/login' element= {<Login />}></Route>
+     <Route path='/profile' element= {<Profile />}></Route>
      <Route path='*' element= {<Home />}></Route>
      
      </Routes>
