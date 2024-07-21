@@ -1,0 +1,99 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.profile-card {
+    background-color: #c29fe8;
+    border-radius: 20px;
+    
+    padding: 80px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.profile-pic-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 6px rgba(16, 16, 16, 0.5) ;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 70%;
+    margin-bottom: 8%;
+}
+
+.edit-icon:hover {
+    background: none;
+}
+
+.profile-info {
+    text-align: center;
+    width: 100%;
+}
+
+.profile-name {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-role {
+    margin: 5px 0;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.semester-selector  {
+    margin: 0;
+    margin-top: 38px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.semester-selector label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.semester-selector select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
