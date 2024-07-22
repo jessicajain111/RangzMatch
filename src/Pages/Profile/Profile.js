@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import './Profile.css';
 import Header from "../../Components/Header";
-import defaultpfp from '../../img/defaultpfp.png'
-import editicon from '../../img/edit.svg'
+import defaultpfp from '../../img/defaultpfp.png';
+import editicon from '../../img/edit.svg';
+import Resizer from 'react-image-file-resizer';
+import insta from '../../img/instagram.jpeg'
 
-function Profile() {
+function Profile(props) {
     const [avatarURL, setAvatarURL] = useState(() => {
         return localStorage.getItem('avatarURL') || defaultpfp;
     });
@@ -26,14 +28,27 @@ function Profile() {
                 console.error("No file selected");
                 return;
             }
-    
-            const localURL = URL.createObjectURL(uploadedFile);
-            setAvatarURL(localURL);
+            resizeFile(uploadedFile);
         } catch (error) {
             console.error(error);
             setAvatarURL(defaultpfp);
         }
     }
+
+    const resizeFile = (file) => {
+        Resizer.imageFileResizer(
+            file,
+            400, // max width
+            400, // max height
+            'JPEG', // output format
+            100, // quality (100% quality)
+            0, // rotation
+            (uri) => {
+                setAvatarURL(uri);
+            },
+            'base64' // output type
+        );
+    };
 
 
     return (
@@ -70,6 +85,33 @@ function Profile() {
                 </div>
              </div>
         </div>
+        <div className="profile-upper">
+            <button className="about">
+                <h3>About Me</h3>
+
+            </button>
+            <button className="personality">
+                <h3>Personality</h3>
+
+            </button>
+        </div>
+        <div className="profile-lower">
+            <button className="dance">
+                <h3>Dance</h3>
+
+            </button>
+
+            <button className="schedule">
+                <h3>Schedule</h3>
+            </button>
+
+        </div>
+
+        <button className="socials">
+            <h3>Socials</h3>
+            
+
+        </button>
         </>
     )
 }
