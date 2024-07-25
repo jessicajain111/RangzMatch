@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import './MentorMentee.css';
 import Header from "../../Components/Header";
+import { useNavigate} from "react-router-dom";
 
 
 
 
 function MentorMentee(){
+    // eslint-disable-next-line 
+    const[role, setRole] = useState('');
+    const naviagte = useNavigate();
+
+    const handleRoleSelection = (selectedRole) => {
+        setRole(selectedRole);
+        naviagte('/profile', {state: {role: selectedRole} })
+    }
+
     return(
         <>
         <Header/>
@@ -20,7 +30,7 @@ function MentorMentee(){
                     <li>Help them with their dances if needed</li>
                     <li>Become their big sister😝</li>
                 </ul>
-                <button className="Button">Mentor</button>
+                <button className="Button" onClick={() => handleRoleSelection('Mentor')}>Mentor</button>
             </div>
             <div className="mentee">
                 <h2>Mentee</h2>
@@ -31,7 +41,7 @@ function MentorMentee(){
                     <li>Ask for help with dancess if needed be</li>
                     <li>Make a friend😝</li>
                 </ul>
-                <button className="Button">Mentee</button>
+                <button className="Button" onClick={() => handleRoleSelection("Mentee")}>Mentee</button>
             </div>
 
         </div>

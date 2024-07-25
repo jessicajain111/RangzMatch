@@ -32,7 +32,7 @@ function CreateAccount(){
         console.log(formValues);
         navigate('/mentormentee');
     }
-   }, [errors, formValues,isSubmit] )
+   }, [errors, formValues,isSubmit, navigate] )
 
    function validate(values){
     const error = {} //empty object for error

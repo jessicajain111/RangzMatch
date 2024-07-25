@@ -1,34 +1,35 @@
-body{
-    background-color: #f0f0f0 ;
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
 .profile-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #f0f0f0;
+    padding: 0px;
+    flex-direction: column;
 }
 
 .profile-card {
     background-color: #c29fe8;
     border-radius: 20px;
-    
-    padding: 80px;
-    width: 400px;
+    padding: 60px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    
+    margin-bottom: 20px;
 }
 
 .profile-pic-container {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     position: relative;
     margin-bottom: 10px;
-    text-shadow: 4px 4px 6px rgba(16, 16, 16, 0.5) ;
+    text-shadow: 4px 4px 6px rgba(16, 16, 16, 0.5);
 }
 
 .profile-pic {
@@ -42,7 +43,7 @@ body{
 .edit-button {
     position: absolute;
     bottom: 10px;
-    right: 0;
+    right: 20px;
     background: none;
     border: none;
     cursor: pointer;
@@ -57,12 +58,6 @@ body{
 .edit-icon {
     width: 24px;
     height: 24px;
-    margin-left: 70%;
-    margin-bottom: 8%;
-}
-
-.edit-icon:hover {
-    background: none;
 }
 
 .profile-info {
@@ -79,14 +74,12 @@ body{
 
 .profile-role {
     margin: 5px 0;
-    margin-top: 30px;
     font-size: 18px;
     font-weight: bold;
 }
 
-.semester-selector  {
-    margin: 0;
-    margin-top: 38px;
+.semester-selector {
+    margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -102,92 +95,89 @@ body{
     border: 1px solid #ccc;
 }
 
-h3{
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    gap:40px;
+  }
+  
+  .profile-upper, .profile-lower {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .profile-lowest{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+  }
+  
+  button {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 15px;
+    width: 600px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #C0C0C0;
+  }
+  
+  button h3 {
+    margin: 0;
     font-family: "Inter";
     text-shadow: none;
+  }
+  
+  .socials {
+    margin-top: 20px;
+  }
 
-}
+  .about{
+    margin-right: 400px;
+    width:400;
+    height: 150px;
+  }
 
-.profile-upper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
+  .personality{
+    width:400px;
+    height: 150px;
+    top:30px;
+  }
+  
+/* Responsive adjustments
+  @media (max-width: 500px) {
+    .profile-upper, .profile-lower {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    button {
+      width: 80%;
+      max-width: 200px;
+    }
+  } */
 
-.about {
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    padding: 80px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: 20px;
-    margin-right: 20px; /* Adjust the space as needed */
-    margin-bottom: 450px;
-}
-
-.personality {
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    padding: 80px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: 20px;
-    margin-bottom: 450px;
-}
-
-.profile-lower {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 9vh;
-    background-color: #f0f0f0;
-}
-
-.dance {
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    padding: 80px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: 20px;
-    margin-right: 20px; /* Adjust the space as needed */
-    margin-bottom: 500px;
-}
-
-.schedule {
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    padding: 80px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: 20px;
-    margin-bottom: 500px;
-}
-
-.socials{
-    margin: auto;
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    padding: 80px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    gap: 20px;
+  /* .profile-upper button, .profile-lower button, .socials {
+    width: 00px;
+    height: 200px;
+    padding: 40px;
    
-}
+    /* other styles... */
