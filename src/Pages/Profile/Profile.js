@@ -99,8 +99,8 @@ function Profile() {
                         </div>
                     </div>
                 </div>
-                <div className="profile-upper">
-                    <button className="about" onClick={() => setOpenAbout(true)}>
+                <div className="profile-questions">
+                     <button className="about" onClick={() => setOpenAbout(true)}>
                         <h3>About</h3>
                         <Popup name="About Me" component={<Aboutbody />} open={openAbout} onClose={() => setOpenAbout(false)} />
                     </button>
@@ -108,8 +108,6 @@ function Profile() {
                         <h3>Personality</h3>
                         <Popup name="Personality" component={<Personalitybody />} open={openPersonality} onClose={() => setOpenPersonality(false)} />
                     </button>
-                </div>
-                <div className="profile-lower">
                     <button className="dance" onClick={() => setOpenDance(true)}>
                         <h3>Dance</h3>
                         <Popup name="Dance" component={<Dancebody />} open={openDance} onClose={() => setOpenDance(false)} />
@@ -118,12 +116,11 @@ function Profile() {
                         <h3>Schedule</h3>
                         <Popup open={openSchedule} onClose={() => setOpenSchedule(false)} name="Schedule" />
                     </button>
-                </div>
-                <div className="profile-lowest">
                     <button className="socials" onClick={() => setOpenSocials(true)}>
                         <h3>Socials</h3>
                         <Popup open={openSocials} onClose={() => setOpenSocials(false)} name="Socials" />
                     </button>
+
                 </div>
             </div>
         </>

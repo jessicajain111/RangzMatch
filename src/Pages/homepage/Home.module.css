@@ -1,11 +1,11 @@
-.body {
+.body-rangz {
     display: flex;
     flex-direction: column;
     min-height: 90vh;
     font-family: "Inter";
 }
 
-.upper{
+.upper-rangz{
     background-color: #000;
     color: #fff;
     padding: 40px 20px;
@@ -33,7 +33,7 @@ h1{
     
 }
 
-.buttons {
+.buttons-rangz {
     margin-top: 20px;
 }
 
@@ -55,13 +55,13 @@ button:hover{
     background-color: #555;
 }
 
-.bottom{
+.bottom-rangz{
     display: flex;
     background-color: #f0f0f0;
     padding: 40px
 }
 
-.about{
+.about-rangz{
     flex: 1;
     padding: 20px;
     background-color: #fff;
@@ -78,7 +78,8 @@ button:hover{
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    witdh: 100%;
 }
 
 .rangz-photo img{
