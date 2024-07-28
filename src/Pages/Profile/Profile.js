@@ -10,6 +10,7 @@ import Popup from "../../Components/Popup";
 import Aboutbody from "../../Components/Aboutbody";
 import Personalitybody from "../../Components/Personalitybody";
 import Dancebody from "../../Components/Dancebody";
+import Socialbody from "../../Components/Socialbody";
 
 function Profile() {
     const location = useLocation();
@@ -118,7 +119,7 @@ function Profile() {
                     </button>
                     <button className="socials" onClick={() => setOpenSocials(true)}>
                         <h3>Socials</h3>
-                        <Popup open={openSocials} onClose={() => setOpenSocials(false)} name="Socials" />
+                        <Popup name="Socials" component={<Socialbody/>} open={openSocials} onClose={() => setOpenSocials(false)}  />
                     </button>
 
                 </div>

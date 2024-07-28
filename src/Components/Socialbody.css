@@ -1,0 +1,36 @@
+.socials-container {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto;
+  }
+  
+  
+  
+  .socials-input {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  
+  .input-field:placeholder-shown{
+    font-style: italic;
+  }

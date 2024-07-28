@@ -1,6 +1,6 @@
 // import rangzphotoshoot
 import React from 'react';
-import './Home.module.css';
+import './Home.css'
 import Header from '../../Components/Header';
 import Footer from './Footer';
 import rangilalogo from '../../img/rangilalogo.png'
