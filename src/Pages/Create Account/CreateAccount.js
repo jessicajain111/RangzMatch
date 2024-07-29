@@ -34,6 +34,7 @@ function CreateAccount(){
     }
    }, [errors, formValues,isSubmit, navigate] )
 
+
    function validate(values){
     const error = {} //empty object for error
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
@@ -61,6 +62,8 @@ function CreateAccount(){
     */
 
    }; 
+
+   
 
 
 

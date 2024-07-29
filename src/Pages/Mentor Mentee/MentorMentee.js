@@ -11,10 +11,13 @@ function MentorMentee(){
     const[role, setRole] = useState('');
     const naviagte = useNavigate();
 
+
+
     const handleRoleSelection = (selectedRole) => {
         setRole(selectedRole);
         naviagte('/profile', {state: {role: selectedRole} })
     }
+    
 
     return(
         <>

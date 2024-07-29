@@ -4,11 +4,23 @@ import './Home.css'
 import Header from '../../Components/Header';
 import Footer from './Footer';
 import rangilalogo from '../../img/rangilalogo.png'
-import rangzphoto from '../../img/rangzphotoshoot.jpg'
+import rangz1 from '../../img/rangzphotoshoot.jpg'
+import rangz2 from "../../img/rangzphoto2.jpeg"
+import rangz3 from "../../img/rangzphoto3.jpeg"
+import rangz4 from "../../img/rangzphoto4.jpeg"
 import { Link } from 'react-router-dom';
+import Carousel from '../../Components/Carousel';
+
 
 
 function Home(){
+    const images = [
+        rangz1, 
+        rangz2, 
+        rangz3, 
+        rangz4
+    ]
+
     return(
     <>
     <Header/>
@@ -18,7 +30,7 @@ function Home(){
             <h1>Welcome to RangzMatch</h1>
             <div className="buttons-rangz">
                 <button><Link to ="/createaccount">Create Account</Link></button>
-                <button><Link to ="/login"> Login </Link></button>
+                 <button><Link to ="/login"> Login </Link></button>
 
             </div>
         </div>
@@ -32,7 +44,7 @@ function Home(){
                 by our love for dance. We strive to build an appreciation for dance and culture.</p>
             </div>
             <div className="rangz-photo">
-            <img src={rangzphoto} alt="rangila group"/>
+                <Carousel images = {images} />
             </div>
         </div>
     </div>
